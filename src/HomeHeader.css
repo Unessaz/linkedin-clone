@@ -1,0 +1,129 @@
+.home-header{
+    position: fixed;
+    top: 0px;
+    background-color: white;
+    width: 100%;
+    left: 0px;
+    z-index: 99;
+}
+.home{
+    background-color: #f3f2ef;
+    height: 100vh;
+}
+nav {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1128px;
+    width: 100%;
+    margin: auto;
+}
+.header-logo {
+    display: flex;
+    align-items: center;
+}
+.header-logo > div {
+    align-items: center;
+    width: 280px;
+    height: 34px;
+    background-color: #eef3f8;
+    display: flex;
+    border-radius: 3px;
+    transition: all ease-in .5s;
+}
+
+.header-logo > svg {
+    color: #0a66c2;
+    font-size: 44px;
+}
+.header-logo > div > svg {
+    font-size: 16px;
+    padding-left: 15px;
+    padding-right: 5px;
+}
+.header-logo input {
+    outline: none;
+    border: none;
+    cursor: text;
+    padding: 5px 0px;
+    width: 100%;
+    background:none ;
+    
+}
+
+.header-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-info > div {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 7px;
+    align-items: center;
+    color: rgb(0, 0, 0 , 0.6);
+    transition: all ease-in-out .43s;
+    cursor: pointer;
+    width: 80px;
+    padding: 4px 0px;
+}
+.active {
+    border-bottom: 2px solid black;
+    color: rgb(0, 0, 0 ) !important;
+}
+.header-info > div:hover{
+    color: rgb(0, 0, 0 );
+}
+.header-info > div > span {
+    font-size: 12px;
+}
+.header-info > div > svg {
+    font-size: 26px;
+}
+.search-mbl{
+    display: none !important;
+}
+.sign-out{
+    background-color: white;
+    color: #0a66c2;
+    position: absolute;
+    border: none;
+    cursor: pointer;
+    top: 40px;
+    width: 80px;
+    height: 40px;
+    box-shadow: 0 0 0 1px rgba(0 , 0 , 0 ,  4%) , 0 0 0 1px rgba(0 , 0 , 0 ,  7%);
+    display: none;
+}
+.signout-wrp:hover .sign-out{
+    display: block;
+}
+
+@media (max-width:991px) {
+    .header-logo > div ,  .header-info > div > span{
+        display: none;
+        
+    }
+    .active{
+        border:none;
+    }
+    nav{
+        width: 100%;
+        justify-content: center;
+    }
+    .header-info > div{
+        width: 48px;
+        margin: 0px;
+        display: flex !important;
+    }
+    .search-mbl{
+        display: block !important;
+    }
+}
+
+@media (max-width:415px){
+    .header-info > div{
+        width: 36px;
+    }
+}

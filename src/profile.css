@@ -1,0 +1,39 @@
+.user-profile{
+    display: grid;
+    grid-template-areas: 'userp side' ;
+    grid-template-columns: minmax(0 , 12fr) minmax(0 , 5fr)  ;
+    column-gap: 25px;
+    row-gap: 25px;
+    grid-template-rows: auto;
+    max-width: 1128px;
+    margin: auto;
+    margin-top: 100px;
+
+}
+
+.user-profile .left-sidebar .left-card .background{
+    height: 175px;
+    background-size: 780px;
+}
+
+.user-profile .left-sidebar .left-card .photo{
+    height: 120px;
+    width: 120px;
+    margin: -75px 25px 12px;
+}
+.user-profile .left-sidebar .left-card .greet ,.user-profile .left-sidebar .left-card .add  {
+    padding-left: 30px;
+
+}
+.user-profile .left-sidebar .left-card{
+    text-align: left;
+}
+
+@media (max-width:991px) {
+    .user-profile{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        
+    }
+}

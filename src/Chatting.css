@@ -1,0 +1,72 @@
+.Chatting{
+    bottom: 0;
+    position: fixed;
+    width: 310px;
+    right:0;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.open-chats{
+    height: 400px;
+    width: 300px;
+    background-color: white;
+    border-top-left-radius:10px ;
+    border-top-right-radius:10px ;
+    overflow-y:scroll; 
+    z-index: 4;
+    cursor: pointer;
+}
+.chats{ 
+    height: 40px;
+    width: 300px;
+    background-color: white;
+    border-top-left-radius:10px ;
+    border-top-right-radius:10px ;
+    overflow-y:scroll; 
+    z-index: 4;
+    cursor: pointer;
+}
+ .chats::-webkit-scrollbar ,  .open-chats::-webkit-scrollbar {
+    display: none;
+  } 
+
+.chat-header{
+    display: flex;
+    position:sticky;
+    top:0px;
+    z-index:4;
+    background:white;
+    align-items: center;
+    padding: 5px;
+    border-bottom: 1px solid rgba(0 , 0 , 0 ,  .08);
+}
+
+.chat-header > span {
+    font-size: 13px;
+    font-weight: 600;
+    margin-left: 5px;
+}
+
+.chat-screen{
+    height: 363px;
+    width: 250px;
+    background-color: white;
+    border-top-left-radius:6px ;
+    border-top-right-radius:6px ;
+    bottom: 0;
+    position: absolute;
+    right:330px;
+}
+
+@media (max-width:600px) {
+    .chats{
+        width: 40px;
+    }
+    .chats > div:nth-child(1) > span {
+        display:none;
+    }
+    .chat-screen{
+        right:80px;
+    }
+}

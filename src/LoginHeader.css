@@ -1,0 +1,62 @@
+.login-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    flex-wrap: nowrap;
+    max-width: 1128px;
+    margin:auto;
+}
+
+.login-header > img {
+   width: 135px;
+}
+
+.login-header div > a{
+    text-decoration: none;
+    font-size: 16px;  
+    height: 40px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.login-header .join {
+    padding: 10px 12px;
+    color: rgb(0, 0, 0 , 0.6);
+    transition: all ease-in-out .35s;
+    border-radius: 5px;
+    margin-right: 12px;
+}
+.login-header .join:hover {
+    background-color: rgba(0,0,0,0.08);
+    color: black;
+}
+
+.login-header .sign {
+    color: #0a66c2;
+    background: white;
+    border: 1px solid #0a66c2;
+    padding: 10px 24px;
+    border-radius: 25px;
+    line-height: 1.6rem;
+    transition: all ease-in-out 167ms;
+}
+.login-header .sign:hover{
+    background-color: rgba(112,181,249,0.15);
+    
+}
+
+@media (max-width:768px) {
+    .login-header{
+        padding: 0px 15px;
+    }
+    .login-header > img {
+        width: 84px;
+     }
+     .login-header .join{
+         padding: 8px 8px;
+     } 
+     .login-header .sign{
+        padding: 8px 16px;
+    }
+}

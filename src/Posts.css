@@ -1,0 +1,56 @@
+.posts{
+    grid-area: main;
+}
+.post-box{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 0 1px rgba(0 , 0 , 0 ,  4%) , 0 0 0 1px rgba(0 , 0 , 0 ,  7%);
+    padding: 15px 20px;
+    
+}
+.post-box > div {
+    display: flex;
+    justify-content: space-around;
+    
+}
+.post-inpt > button{
+    font-size: 14px;
+    flex-grow: 1;
+    border: 1px solid rgba(0 , 0 , 0 ,  .3);
+    border-radius: 35px;
+    background: none;
+    text-align: left;
+    padding-left: 15px;
+    color: rgba(0 , 0 , 0 ,  .6);
+    font-weight: 400;
+    margin-left: 10px;
+}
+.post-info{
+    justify-content: space-between !important;
+    align-items: center;
+    padding: 10px 0px;
+}
+.post-info > div > svg{
+    position: relative;
+    top: 7px;
+}
+.post-info > div:nth-child(1) > svg {
+    color: #70b5f9;
+}
+.post-info > div:nth-child(2) > svg {
+    color: #7fc15e;
+}
+.post-info > div:nth-child(3) > svg {
+    color: #e7a33e;
+}
+.post-info > div:nth-child(4) > svg {
+    color: #fc9295;
+}
+.post-info > div > span {
+    color: rgba(0 , 0 , 0 ,  .6);
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 8px;
+}

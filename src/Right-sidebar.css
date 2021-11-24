@@ -1,0 +1,66 @@
+.right-sidebar{
+    grid-area: rightside;
+}
+.follow-part , .photo-part{
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 0 1px rgba(0 , 0 , 0 ,  4%) , 0 0 0 1px rgba(0 , 0 , 0 ,  7%);
+    padding: 15px ;
+}
+.photo-part{
+    margin-top: 10px;
+    padding: 0px;
+    position: sticky;
+    top: 76px;
+}
+.photo-part > img{
+    height: 100%;
+    width: 95%;
+    margin-left: 2.5%;
+}
+.follow-part > div:nth-child(1) {
+    display: flex;
+    justify-content: space-between;
+}
+.follow-part > div:nth-child(1) > svg{
+    color: rgb(0 , 0 , 0 ,  0.9) !important;
+}
+.follow-part > div:nth-child(1) > h2 {
+    font-size: 16px;
+    color: rgb(0 , 0 , 0 ,  0.9);
+    align-items: center;
+    margin: 0;
+}
+
+.follow-part > div:nth-child(2) {
+    display: flex;
+    justify-content: start;
+    margin: 10px 0px;
+    flex-direction: column;
+}
+
+.follow-part > div:nth-child(2) > div> div> h3{
+    font-size: 14px;
+    margin: 0 10px 5px 10px;
+    color: rgb(0 , 0 , 0 ,  0.9) !important;
+    text-transform: uppercase;
+
+}
+.follow-part > div:nth-child(2) > div>div{
+    margin: 10px 0px;
+}
+.follow-part > div:nth-child(2) > div {
+    display: flex;
+}
+.follow-part > div:nth-child(2) > div > div>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 27px;
+    color:rgba(0,0,0,0.6);
+    border-radius: 25px;
+    border: 1px solid rgb(0 , 0 , 0 ,  0.6);
+    margin: 0 10px;
+}
+

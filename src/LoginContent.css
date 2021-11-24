@@ -1,0 +1,81 @@
+.login-in{
+    overflow: hidden;
+    background-color: white;
+}
+section{
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 670px;
+    padding: 0 0 138px 0;
+    align-items: center;
+    align-content: start;
+    padding-top: 40px;
+    position: relative;
+    margin: auto;
+    width: 100%;
+    max-width: 1128px;
+    padding: 60px 0px;
+}
+section > .hero-content {
+    width: 100%;
+}
+section > .hero-content  > h1 {
+    color: #8f5849;
+    font-weight: 200;
+    line-height: 1.25;
+    font-size: 56px;
+    width: 55%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+section > .hero-content  > img {
+    width: 700px;
+    height: 678px;
+    position: absolute;
+    right: -150px;
+    top: 0px;
+}
+.ggl-sign {
+   width: 400px;
+}
+.ggl-sign button {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 56px;
+    border-radius: 25px;
+    outline: none;
+    border: 2px solid #cdd1d4;
+    background-color: white;
+    color: rgba(0, 0, 0, 0.75);
+    justify-content: center;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 20px;
+    transition: all ease-in .375s;
+
+}
+.ggl-sign button:hover{
+    background-color: rgba(207, 207,207, 0.25);
+}
+.ggl-sign img {
+    width: 20px;
+    margin-right:10px ;
+}
+@media (max-width:768px) {
+    section{
+        min-height: 0px;
+        margin: auto;
+    }
+    section > .hero-content  > h1{
+        width: 100%;
+        font-size: 32px;
+        line-height: 1.3;
+    }
+    section > .hero-content  > img{
+        width: initial;
+        position: initial;
+        height: initial;
+    }
+}
