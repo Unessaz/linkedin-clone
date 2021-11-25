@@ -35,7 +35,7 @@ function Chat({id , user , open , opens , openf}) {
                  ...doc.data()})))
            ))}
 
-           return () => {
+        return () => {
             usubscribe = true
           }
      }, [])
