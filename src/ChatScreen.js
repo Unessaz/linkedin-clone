@@ -3,8 +3,8 @@ import { connect } from 'react-redux'
 import Avatar from '@mui/material/Avatar'
 import moment from 'moment'
 function ChatScreen({text , date , email , user , name , pdp}) {
-
-    
+ 
+    console.log( )
     return (
         <div  className={` ${ pdp !== user?.photoURL ? 'text-wrp-reciever' : 'text-wrp'}`} >
         { pdp !== user?.photoURL &&   <Avatar src={pdp} sx={{ width: 24, height: 24 }} /> }  

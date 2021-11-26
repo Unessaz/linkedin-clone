@@ -127,6 +127,7 @@ function Chat({id , user , open , opens , openf}) {
 
                </div>
                <div className='chatting-wrp'>
+                 
               {messages.map( ({text , date , email , name , pdp , id}) =>(
             <ChatScreen
               text ={text}

@@ -47,3 +47,11 @@
 .comment h4 {
     margin-bottom: -3px;
 }
+@media (max-width:500px) {
+    .comment p{
+        margin-top: 0px;
+    }
+    .comment div span:nth-child(2) {
+        display: none;
+    }
+}
