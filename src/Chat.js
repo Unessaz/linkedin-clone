@@ -36,7 +36,7 @@ function Chat({id , user , open , opens , openf}) {
            ))}
 
         return () => {
-            usubscribe = true
+              usubscribe = true
           }
      }, [])
      
@@ -92,7 +92,7 @@ function Chat({id , user , open , opens , openf}) {
     const close = () => {
       if(openf.email === user?.email){
         db.collection('chats').doc(id).update({
-          openf : {
+          openf : { 
               email: user?.email ,
               statue : false
 
